@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title} #{headline}
+  p
+    a(href='/add') Add movie here
+
+  ul
+    each movie in movies
+        include ./partial/movie.jade

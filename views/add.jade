@@ -1,0 +1,22 @@
+//
+   Created by TOTO on 1/15/16.
+
+extends layout
+
+block content
+    h2 Add new movie here
+    form(name = "add_new_movie", method = "post", action = '/add')
+        div.input
+            span.label Title
+            input(type = "text", name = "title")
+        div.input
+            span.label Director
+            input(type = "text", name = "director")
+        div.input
+            span.label Description
+            textarea(name = "description", cols = "40", rows = "5")
+        div.input
+            span.label Director
+        div.actions
+            input(type = "submit", value = "add")
+
