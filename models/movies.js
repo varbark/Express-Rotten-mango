@@ -4,13 +4,6 @@
 
 "use strict";
 var Sequelize = require("sequelize");
-//var pgp = require('pg-promise')();
-//var cn = 'postgres://development:development@localhost:5432/database';
-//var db = pgp(cn);
-//
-//module.exports.all = function(){
-//  return db.query('select * from movies')
-//};
 
 module.exports = function(sequelize, DataTypes){
   var Movie = sequelize.define('Movie', {
